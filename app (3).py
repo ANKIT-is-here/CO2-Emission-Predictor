@@ -169,8 +169,8 @@ if page == "📊 Predict Emissions":
                 self.set_text_color(120,120,120)
                 self.cell(0, 10, f"Page {self.page_no()}  |  Powered by VNIT Nagpur", 0, 0, "C")
         pdf = PDF()
-        pdf.add_font('DejaVu', '', 'fonts/DejaVuSans.ttf', uni=True)
-        pdf.add_font('DejaVu', 'B', 'fonts/DejaVuSans-Bold.ttf', uni=True)
+        pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
+        pdf.add_font('DejaVu', 'B', 'DejaVuSans-Bold.ttf', uni=True)
         pdf.add_page()
         if section_options["Input Parameters"]:
             pdf.set_font("DejaVu", 'B', 14)
