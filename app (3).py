@@ -171,6 +171,8 @@ if page == "📊 Predict Emissions":
         pdf = PDF()
         pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
         pdf.add_font('DejaVu', 'B', 'DejaVuSans-Bold.ttf', uni=True)
+        pdf.set_font("DejaVu", "", 10)
+        pdf.cell(0, 0, "")
         pdf.add_page()
         if section_options["Input Parameters"]:
             pdf.set_font("DejaVu", 'B', 14)
