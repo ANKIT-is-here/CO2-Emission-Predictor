@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -174,10 +166,6 @@ if page == "📊 Predict Emissions":
         pdf.add_page()
         pdf.set_font("DejaVu", "", 10)
         pdf.cell(0, 0, "")  # Dummy use to register font
-
-        
-        
-        
         if section_options["Input Parameters"]:
             pdf.set_font("DejaVu", 'B', 14)
             pdf.set_text_color(0,119,68)
@@ -330,8 +318,8 @@ elif page == "📁 Upload CSV":
                 self.set_text_color(120,120,120)
                 self.cell(0, 10, f"Page {self.page_no()}  |  Powered by VNIT Nagpur", 0, 0, "C")
         pdf = PDF()
-        pdf.add_font('DejaVu', '', '/content/fonts/DejaVuSans.ttf', uni=True)
-        pdf.add_font('DejaVu', 'B', '/content/fonts/DejaVuSans-Bold.ttf', uni=True)
+        pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
+        pdf.add_font('DejaVu', 'B', 'DejaVuSans-Bold.ttf', uni=True)
         pdf.add_page()
         pdf.set_font("DejaVu", 'B', 14)
         pdf.set_text_color(0,119,68)
